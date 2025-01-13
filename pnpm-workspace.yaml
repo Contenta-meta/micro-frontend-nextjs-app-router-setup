@@ -1,0 +1,6 @@
+packages:
+  - 'host'
+  - 'admin'
+  - 'guest'
+  - 'user'
+  - 'shared'

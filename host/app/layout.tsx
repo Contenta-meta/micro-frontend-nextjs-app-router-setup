@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import { Header, Footer } from "@guesty/shared";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 
@@ -16,9 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Header />
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="flex-1 container mx-auto p-4">{children}</main>
+        <Footer />
       </body>
     </html>
   );

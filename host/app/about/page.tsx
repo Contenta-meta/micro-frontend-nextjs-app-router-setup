@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function AboutPage() {
+export default async function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 md:p-24">
       <h1 className="text-4xl font-bold mb-8">About Our Micro Frontend</h1>
@@ -13,7 +13,6 @@ export default function AboutPage() {
           large application into smaller, more manageable pieces while
           maintaining a seamless user experience.
         </p>
-
         <div className="bg-gray-100 p-6 rounded-lg">
           <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
           <ul className="text-left list-disc list-inside space-y-2">
@@ -31,7 +30,6 @@ export default function AboutPage() {
             <li>Seamless integration between components</li>
           </ul>
         </div>
-
         <Link
           href="/"
           className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6"

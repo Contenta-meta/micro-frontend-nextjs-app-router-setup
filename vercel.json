@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "host/next.config.js", "use": "@vercel/next" },
+    { "src": "admin/next.config.js", "use": "@vercel/next" },
+    { "src": "guest/next.config.js", "use": "@vercel/next" },
+    { "src": "user/next.config.js", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/admin(.*)", "dest": "admin$1" },
+    { "src": "/guest(.*)", "dest": "guest$1" },
+    { "src": "/user(.*)", "dest": "user$1" },
+    { "src": "/(.*)", "dest": "host/$1" }
+  ]
+}

@@ -1,6 +1,10 @@
-const ADMIN_URL = "http://localhost:3001";
-const USER_URL = "http://localhost:3002";
-const GUEST_URL = "http://localhost:3003";
+const getUrl = (appName: string, defaultPort: number) => {
+  const port = process.env[`${appName.toUpperCase()}_PORT`] || defaultPort;
+  return `http://localhost:${port}`;
+};
+const ADMIN_URL = getUrl("admin", 3001);
+const USER_URL = getUrl("user", 3002);
+const GUEST_URL = getUrl("guest", 3003);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
