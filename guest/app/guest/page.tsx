@@ -4,7 +4,7 @@ export default function GuestApp() {
   return (
     <div className="p-4 max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-4">Welcome, Guest!</h2>
-      <div className="bg-white p-6 rounded shadow mb-4">
+      <div className="border border-white p-6 rounded shadow mb-4">
         <h3 className="text-lg font-semibold mb-2">Explore Our Platform</h3>
         <p className="mb-4">
           Discover the amazing features our platform has to offer. Sign up now

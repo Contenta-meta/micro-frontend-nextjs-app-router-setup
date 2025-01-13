@@ -1,11 +1,12 @@
-import "../styles/globals.css";
+import Header from "@/components/Header";
 import { Inter } from "next/font/google";
+import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Micro Frontend Host",
-  description: "Host application for our module federation setup",
+  description: "Host application for our micro-frontends setup",
 };
 
 export default function RootLayout({
@@ -16,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="bg-blue-600 text-white p-4">
-          <h1 className="text-2xl font-bold">Micro Frontend Host</h1>
-        </header>
+        <Header />
         <main className="container mx-auto p-4">{children}</main>
       </body>
     </html>
